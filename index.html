@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Una carta para ti 💌</title>
+  <meta name="description" content="Carta animada con efectos y sorpresas" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Partículas y corazones de fondo -->
+  <div class="stars" id="stars"></div>
+  <div class="hearts" id="hearts"></div>
+  <canvas id="confetti"></canvas>
+
+  <!-- Contenido principal -->
+  <div class="wrap">
+    <div class="envelope shadow" id="envelope" role="button" aria-label="Abrir carta">
+      <div class="env-body">
+        <div class="flap"></div>
+        <div class="paper">
+          <h1 class="title">Para: <span id="toName">Tu nombre ✨</span></h1>
+          <p class="subtitle" id="dateText">Hoy</p>
+          <div class="letter" id="letterText">
+            Quería regalarte algo distinto: una pequeña carta hecha con cariño. 
+            Me encantas por tu forma de ver el mundo, por cómo iluminas los días 
+            y por la paz que siento cuando hablo contigo. Ojalá te guste esta sorpresa. 💖
+          </div>
+          <div class="signature" id="fromName">— De mí, para ti</div>
+        </div>
+        <div class="seal" id="seal">💌</div>
+        <div class="pulse" id="pulse"></div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="btnConfetti" type="button">Lanzar confeti</button>
+        <button class="btn" id="btnMusic" type="button">🎵 Música</button>
+        <button class="btn" id="btnReplay" type="button">Reiniciar animación</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hint">Tip: toca/clic en el sobre para abrir la carta.</div>
+
+  <!-- Lógica -->
+  <script src="app.js" defer></script>
+</body>
+</html>
